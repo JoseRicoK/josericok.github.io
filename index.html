@@ -2,23 +2,179 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte KartingMarks</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px; }
-        .container { max-width: 600px; margin: auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; }
-        p { color: #666; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            color: #FF4500;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Accordion FAQ section */
+        .faq-section {
+            margin-top: 30px;
+        }
+
+        .faq {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .faq button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: #FF4500;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 0;
+            text-align: left;
+            width: 100%;
+            transition: color 0.3s ease;
+        }
+
+        .faq button:hover {
+            color: #333;
+        }
+
+        .faq button.active {
+            color: #333;
+        }
+
+        .faq .answer {
+            display: none;
+            padding: 10px 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .faq .answer.active {
+            display: block;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+        }
+
+        .contact-section a {
+            font-weight: bold;
+            color: #FF4500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Soporte KartingMarks</h1>
-        <p>¡Gracias por usar KartingMarks! Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos:</p>
-        <ul>
-            <li><strong>Email:</strong> <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a></li>
-        </ul>
-        <h2>Preguntas Frecuentes</h2>
-        <p>Sugiere tus preguntas más recurrentes en la dirección de correo.</p>
+
+<div class="container">
+    <h1>Soporte KartingMarks</h1>
+    <p>¡Gracias por usar KartingMarks! Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos:</p>
+
+    <div class="contact-section">
+        <p><strong>Email:</strong> <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a></p>
     </div>
+
+    <div class="faq-section">
+        <h2>Preguntas Frecuentes</h2>
+        
+        <!-- Pregunta 1 -->
+        <div class="faq">
+            <button class="accordion">¿Cómo puedo añadir un circuito a mis favoritos?</button>
+            <div class="answer">
+                <p>Para añadir un circuito a tus favoritos, ve a la sección de circuitos, busca el que deseas agregar y pulsa el botón <strong>"+" </strong> situado a la derecha del nombre del circuito.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="faq">
+            <button class="accordion">¿Cómo puedo cambiar mi imagen de perfil?</button>
+            <div class="answer">
+                <p>Ve a la sección de perfil en la parte superior derecha de la app, pulsa en la imagen de perfil actual y selecciona una nueva imagen desde tu galería o toma una foto con la cámara.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="faq">
+            <button class="accordion">¿Por qué no puedo ver mis tiempos de ranking?</button>
+            <div class="answer">
+                <p>Si no puedes ver tus tiempos de ranking, asegúrate de haber seleccionado un circuito y un kart en la sección de rankings. Si el problema persiste, contacta con nuestro soporte.</p>
+            </div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="faq">
+            <button class="accordion">¿Puedo competir contra mis amigos en los rankings?</button>
+            <div class="answer">
+                <p>Sí, puedes añadir amigos a la app y competir contra ellos en el ranking de tiempos. Solo ve a la sección "Amigos", añádelos y selecciona la opción de ver el ranking de amigos en la página de rankings.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Script para manejar el acordeón FAQ
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(button => {
+        button.addEventListener('click', () => {
+            const answer = button.nextElementSibling;
+            button.classList.toggle('active');
+            answer.classList.toggle('active');
+        });
+    });
+</script>
+
 </body>
 </html>
