@@ -12,7 +12,7 @@
             margin: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start; /* Cambiado de center a flex-start para permitir desplazamiento */
             min-height: 100vh;
         }
 
@@ -34,11 +34,18 @@
         p {
             color: #666;
             line-height: 1.6;
+            margin-bottom: 15px;
         }
 
         ul {
-            list-style: none;
-            padding: 0;
+            list-style: disc;
+            padding-left: 40px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         a {
@@ -108,6 +115,21 @@
             color: #FF4500;
         }
 
+        /* New Sections Styling */
+        .legal-section {
+            margin-top: 40px;
+        }
+
+        .legal-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .legal-section h3 {
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
         /* Responsive Design */
         @media (max-width: 600px) {
             .container {
@@ -161,6 +183,140 @@
             </div>
         </div>
     </div>
+
+    <!-- Nueva Sección de Términos y Condiciones y Política de Privacidad -->
+    <div class="legal-section">
+        <h2>Términos y Condiciones de Uso de KartingMarks</h2>
+    
+        <!-- Sección de Términos y Condiciones -->
+        <h3>1. Objeto y Ámbito de Aplicación</h3>
+        <p>
+            Estos Términos y Condiciones regulan el uso y la relación entre los usuarios y la aplicación KartingMarks, creada y administrada por el desarrollador de la aplicación, el cual es el titular de todos los derechos de propiedad intelectual y de explotación. Al utilizar la aplicación, el usuario acepta los términos aquí establecidos. Para cualquier consulta, el usuario puede ponerse en contacto a través del correo electrónico <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a>.
+        </p>
+    
+        <h3>2. Definiciones</h3>
+        <p><strong>KartingMarks:</strong> Aplicación móvil que ofrece a los usuarios funciones para el registro de tiempos, análisis de rendimiento y exploración de circuitos de karting.</p>
+        <p><strong>Usuario:</strong> Persona que utiliza la aplicación, ya sea como visitante o como usuario registrado.</p>
+        <p><strong>Cuenta Pro:</strong> Suscripción que brinda acceso a funcionalidades avanzadas en KartingMarks.</p>
+    
+        <h3>3. Alta y Registro en KartingMarks</h3>
+        <p>
+            El usuario puede registrarse en la aplicación, lo que implica la aceptación de estos Términos y Condiciones. Para registrarse, el usuario debe ser mayor de edad en su país de residencia. Los menores de edad pueden registrarse solo con el consentimiento de sus representantes legales, quienes asumirán la responsabilidad de su actividad en la aplicación.
+        </p>
+    
+        <h3>4. Identidad y Seguridad</h3>
+        <p>
+            El usuario garantiza la veracidad de los datos proporcionados y se compromete a no suplantar la identidad de terceros. KartingMarks no puede detectar suplantaciones sin la colaboración del usuario, quien es responsable del uso seguro de sus credenciales de acceso.
+        </p>
+    
+        <h3>5. Funcionalidades y Contenido de KartingMarks</h3>
+        <p>KartingMarks permite:</p>
+        <ul>
+            <li><strong>Registro y consulta de tiempos de circuito:</strong> Los usuarios pueden registrar, visualizar y comparar tiempos en circuitos de karting.</li>
+            <li><strong>Suscripción a Cuenta Pro:</strong> Acceso a funcionalidades avanzadas mediante suscripción, incluyendo gráficos y análisis de rendimiento.</li>
+            <li><strong>Interacción con la comunidad:</strong> Compartir tiempos y logros con otros usuarios.</li>
+        </ul>
+    
+        <h3>6. Compras y Suscripciones en la Aplicación</h3>
+        <p><strong>Compras en la Aplicación:</strong> KartingMarks ofrece la posibilidad de adquirir productos y servicios a través de compras únicas o suscripciones recurrentes, las cuales son gestionadas por plataformas externas (Apple App Store o Google Play).</p>
+        <p><strong>Política de Reembolso:</strong> Las compras realizadas no tienen opción de reembolso, salvo en situaciones especiales donde así lo estipulen las políticas de la plataforma externa. El usuario acepta estas políticas al realizar una compra.</p>
+    
+        <h3>7. Propiedad Intelectual</h3>
+        <p>
+            Todo el contenido de KartingMarks, incluyendo logos, diseño visual, elementos gráficos y funcionalidad, es propiedad exclusiva del desarrollador. Se prohíbe cualquier uso no autorizado del contenido de KartingMarks sin el consentimiento expreso.
+        </p>
+    
+        <h3>8. Contenido Generado por el Usuario</h3>
+        <p>
+            El usuario puede crear contenido en la aplicación, como registros de tiempos y comentarios. Al enviar contenido, el usuario concede a KartingMarks el derecho no exclusivo y perpetuo de usar dicho contenido sin compensación. El usuario garantiza que no se infringen derechos de terceros y asume toda responsabilidad sobre el contenido que publica.
+        </p>
+    
+        <h3>9. Privacidad y Protección de Datos</h3>
+        <p>
+            El uso de la aplicación implica la recopilación y procesamiento de datos personales de acuerdo con la Política de Privacidad. KartingMarks asegura el cumplimiento de las normativas vigentes sobre protección de datos personales, ofreciendo a los usuarios el derecho a solicitar la eliminación de sus datos.
+        </p>
+    
+        <h3>10. Limitaciones de Uso y Responsabilidad</h3>
+        <p>
+            El usuario se compromete a no utilizar la aplicación para fines ilegales o que puedan afectar la integridad de la aplicación o sus usuarios. KartingMarks se reserva el derecho de eliminar cuentas y contenido que incumpla estos Términos y Condiciones.
+        </p>
+        <p>
+            <strong>Exoneración de Responsabilidad:</strong> KartingMarks no es responsable de posibles daños derivados del uso de la aplicación o de errores técnicos que puedan surgir, salvo en casos de negligencia grave.
+        </p>
+    
+        <h3>11. Modificaciones a los Términos y Condiciones</h3>
+        <p>
+            KartingMarks se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento, notificando a los usuarios mediante la aplicación o correo electrónico. El uso continuado de la aplicación tras las modificaciones implica la aceptación de los nuevos términos.
+        </p>
+    
+        <h3>12. Ley Aplicable y Jurisdicción</h3>
+        <p>
+            Estos Términos y Condiciones se regirán e interpretarán de acuerdo con las leyes aplicables en España. Para cualquier controversia derivada del uso de la aplicación, ambas partes se someten a la jurisdicción de los tribunales españoles.
+        </p>
+    
+        <h3>13. Contacto</h3>
+        <p>
+            Para cualquier consulta relacionada con estos Términos y Condiciones, el usuario puede ponerse en contacto a través de <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a>.
+        </p>
+    
+        <!-- Sección de Política de Privacidad -->
+        <h2>Política de Privacidad de KartingMarks</h2>
+    
+        <h3>1. Introducción</h3>
+        <p>
+            La presente Política de Privacidad describe cómo KartingMarks, la aplicación desarrollada de forma individual, recopila, utiliza y protege la información de sus usuarios. El uso de KartingMarks implica la aceptación de esta Política de Privacidad. Para cualquier consulta o solicitud, el usuario puede contactar a través del correo electrónico <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a>.
+        </p>
+    
+        <h3>2. Información Recopilada</h3>
+        <p>KartingMarks recopila los siguientes tipos de información:</p>
+        <ul>
+            <li><strong>Información Personal:</strong> Datos proporcionados por el usuario al crear una cuenta, tales como nombre de usuario, correo electrónico y contraseña.</li>
+            <li><strong>Datos de Uso:</strong> Información generada al utilizar la aplicación, como tiempos de circuito, karts seleccionados y circuitos visitados. Estos datos ayudan a mejorar la experiencia del usuario y a ofrecer estadísticas personalizadas.</li>
+            <li><strong>Datos de Pago:</strong> KartingMarks no almacena información de pago, ya que todas las transacciones son procesadas a través de Apple App Store o Google Play, según corresponda, bajo sus políticas de privacidad y seguridad.</li>
+        </ul>
+    
+        <h3>3. Uso de la Información Recopilada</h3>
+        <p>La información recopilada se utiliza para:</p>
+        <ul>
+            <li><strong>Proporcionar y Mejorar los Servicios:</strong> Los datos de uso ayudan a personalizar la experiencia de los usuarios y a mejorar las funcionalidades de la aplicación.</li>
+            <li><strong>Comunicación con el Usuario:</strong> Enviar notificaciones relacionadas con actualizaciones, términos y condiciones, suscripciones o asuntos técnicos.</li>
+            <li><strong>Cumplimiento Legal:</strong> En caso de ser requerido por la ley o autoridades competentes, KartingMarks puede compartir datos específicos conforme a las normativas vigentes.</li>
+        </ul>
+    
+        <h3>4. Retención de Datos</h3>
+        <p>
+            KartingMarks retiene la información personal del usuario mientras mantenga su cuenta activa en la aplicación. Si el usuario solicita eliminar su cuenta, los datos se eliminarán en un plazo razonable, salvo que la ley exija su conservación por más tiempo.
+        </p>
+    
+        <h3>5. Seguridad de los Datos</h3>
+        <p>
+            KartingMarks adopta medidas de seguridad para proteger los datos de sus usuarios contra accesos no autorizados, alteración o divulgación indebida. Sin embargo, no puede garantizar la seguridad absoluta de la información debido a riesgos asociados al entorno digital.
+        </p>
+    
+        <h3>6. Derechos del Usuario</h3>
+        <p>El usuario tiene derecho a:</p>
+        <ul>
+            <li><strong>Acceso:</strong> Consultar los datos personales que KartingMarks tiene sobre él.</li>
+            <li><strong>Rectificación:</strong> Modificar los datos inexactos o incompletos.</li>
+            <li><strong>Eliminación:</strong> Solicitar la eliminación de su cuenta y sus datos.</li>
+            <li><strong>Limitación del Tratamiento:</strong> Restringir el uso de sus datos bajo ciertas circunstancias.</li>
+            <li><strong>Oposición:</strong> Oponerse al uso de sus datos para ciertos fines.</li>
+        </ul>
+        <p>
+            Para ejercer cualquiera de estos derechos, el usuario puede enviar un correo electrónico a <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a>.
+        </p>
+    
+        <h3>7. Cambios en la Política de Privacidad</h3>
+        <p>
+            KartingMarks puede actualizar esta Política de Privacidad ocasionalmente. Se notificará a los usuarios sobre cambios importantes a través de la aplicación o correo electrónico. El uso continuado de la aplicación implica la aceptación de los cambios.
+        </p>
+    
+        <h3>8. Contacto</h3>
+        <p>
+            Para cualquier duda o solicitud relacionada con esta Política de Privacidad, el usuario puede escribir a <a href="mailto:kartingmarks@gmail.com">kartingmarks@gmail.com</a>.
+        </p>
+    </div>
+
 </div>
 
 <script>
